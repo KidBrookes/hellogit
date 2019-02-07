@@ -7,6 +7,9 @@ int main()
 random_device rd;
 mt19937 eng1 (rd ());
 mt19937 eng2 (1337);
+
+float mean = 36.7f;
+float sd = 4.565f; 
 int min =10, max = 100;
 
 uniform_int_distribution<> unifrm(min, max);
@@ -21,7 +24,7 @@ for (int n = 0; n < 20; n ++)
 
 
 //generate 20 uniformly distributed integers
-for(int n = 0; n < 20 ; n+=)
+for(int n = 0; n < 20 ; n++)
 {
 	cout<<unifrm(eng2)<<" ";
   }
