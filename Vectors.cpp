@@ -1,12 +1,19 @@
 #include <vector>
+#include <iostream>
+using namespace std;
 
-vector<int> v1= {11, 29, 38, 47};
+
 
 int main(){
 
-for (int i = 0; i < 3; i++)
-{
-cout << v1<<" ";
-}
+vector<int> v1 = {0, 1, 2, 3};
+v1.push_back(4);
+cout << v1[4];
+
+
+
+
 return 0;
+
+
 }
